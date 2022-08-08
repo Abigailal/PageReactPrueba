@@ -1,5 +1,4 @@
 .App {text-align: center;}
-.text-light{color: white;}
 .bg-dark {background-color: gray;}
 .bg-light{background-color: azure;}
-.text-dark{color: black;}
+.card-light {background-color: gray;}

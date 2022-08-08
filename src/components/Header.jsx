@@ -1,21 +1,23 @@
 import React from 'react';
 
-const Header = ({darkMode,setDarkMode}) => {
-
+const Header = ({theme,setTheme}) => {
+    
 
     const handleClick = () => {
-        setDarkMode(!darkMode);
+        setTheme(!theme)
     }
 
+    let gbtn = theme ? "btn btn-light" : "btn btn-dark";
+
     return (
-        <div>
-            <h1>React Hooks</h1>
+        <div className='ms-auto'>
             <button type='button'
             onClick={handleClick}
+            className={'btn me-5 mt-3 ms-auto' + gbtn}
             >{
-                darkMode
-                    ? 'Dark Mode'
-                    : 'Light Mode'
+                theme
+                    ? 'Go to Light Mode'
+                    : 'Go to Dark Mode'
             }</button>
         </div>
     );
